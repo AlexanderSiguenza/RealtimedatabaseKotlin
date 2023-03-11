@@ -7,13 +7,14 @@ import androidx.appcompat.app.AppCompatActivity
 import edu.udb.realtimedatabase.datos.Persona
 
 class AddPersonaActivity : AppCompatActivity() {
-    var edtDUI: EditText? = null
-    var edtNombre: EditText? = null
-    var key = ""
-    var nombre = ""
-    var dui = ""
-    var accion = ""
-    protected override fun onCreate(savedInstanceState: Bundle?) {
+    private var edtDUI: EditText? = null
+    private var edtNombre: EditText? = null
+    private var key = ""
+    private var nombre = ""
+    private var dui = ""
+    private var accion = ""
+
+     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_persona)
         inicializar()
@@ -25,17 +26,25 @@ class AddPersonaActivity : AppCompatActivity() {
 
         // Obtención de datos que envia actividad anterior
         val datos: Bundle? = intent.getExtras()
-        key = datos.getString("key").toString()
-        dui = datos.getString("dui").toString()
-        nombre = datos.getString("nombre").toString()
-        accion = datos.getString("accion").toString()
-        edtDUI.setText(dui)
-        edtNombre.setText(nombre)
+        if (datos != null) {
+            key = datos.getString("key").toString()
+        }
+        if (datos != null) {
+            dui = datos.getString("dui").toString()
+        }
+        if (datos != null) {
+            nombre = datos.getString("nombre").toString()
+        }
+        if (datos != null) {
+            accion = datos.getString("accion").toString()
+        }
+        //edtDUI.setText(dui)
+        //edtNombre.setText(nombre)
     }
 
     fun guardar(v: View?) {
-        val nombre: String = edtNombre.getText().toString()
-        val dui: String = edtDUI.getText().toString()
+        val nombre: String = edtNombre?.text.toString()
+        val dui: String = edtDUI?.text.toString()
         // Se forma objeto persona
         val persona = Persona(dui, nombre)
         if (accion == "a") { //Agregar usando push()

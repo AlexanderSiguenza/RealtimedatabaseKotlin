@@ -97,12 +97,14 @@ class PersonasActivity : AppCompatActivity() {
                 personas!!.removeAll(personas!!)
                 for (dato in dataSnapshot.getChildren()) {
                     val persona: Persona? = dato.getValue(Persona::class.java)
-                    persona.key(dato.key)
-                    personas!!.add(persona)
+                    persona?.key(dato.key)
+                    if (persona != null) {
+                        personas!!.add(persona)
+                    }
                 }
                 val adapter = AdaptadorPersona(
                     this@PersonasActivity,
-                    personas
+                    personas as ArrayList<Persona>
                 )
                 listaPersonas!!.adapter = adapter
             }

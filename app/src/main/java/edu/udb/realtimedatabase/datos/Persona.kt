@@ -1,6 +1,10 @@
 package edu.udb.realtimedatabase.datos
 
 class Persona {
+    fun key(key: String?) {
+        TODO("Not yet implemented")
+    }
+
     var dui: String? = null
     var nombre: String? = null
     var key: String? = null

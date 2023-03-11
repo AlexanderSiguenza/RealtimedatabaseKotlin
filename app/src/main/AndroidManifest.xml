@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RealTimeDataBase"
         tools:targetApi="31">
-        <activity android:name=".PersonasActivity">
+        <activity android:name=".PersonasActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

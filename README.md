@@ -85,10 +85,19 @@ Si deseas contribuir a este proyecto, por favor, realiza un fork del repositorio
 
 ## Licencia
 
-Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+Este proyecto está licenciado bajo la Licencia MIT. 
 
 ---
+## Listar
+<img src="https://github.com/AlexanderSiguenza/loginfirebase16032024/blob/main/img/lista.png" alt="Descripción de la imagen" width="300" height="600">
 
-¡Gracias por usar este proyecto! Si tienes alguna pregunta o sugerencia, no dudes en contactar.
+## Nuevo
+<img src="https://github.com/AlexanderSiguenza/loginfirebase16032024/blob/main/img/nuevo.png" alt="Descripción de la imagen" width="300" height="600">
+
+## Modificar
+<img src="https://github.com/AlexanderSiguenza/loginfirebase16032024/blob/main/img/modificar.png" alt="Descripción de la imagen" width="300" height="600">
+
+## Eliminar
+<img src="https://github.com/AlexanderSiguenza/loginfirebase16032024/blob/main/img/eliminar.png" alt="Descripción de la imagen" width="300" height="600">
 
 
